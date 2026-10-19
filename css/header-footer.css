@@ -1,1 +1,108 @@
 /* MEMBER 4: header, navigation and footer styles */
+
+/* MEMBER 4: header, navigation and footer styles */
+
+/* Header and Navigation */
+body > header {
+    background-color: #172554;
+    color: #ffffff;
+    padding: 18px 8%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+body > header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+body > header .logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+body > header .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+body > header .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+body > header .nav-links a:hover {
+    color: #93c5fd;
+}
+
+body > header .nav-links .github-btn {
+    background-color: #ffffff;
+    color: #172554;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+body > header .nav-links .github-btn:hover {
+    background-color: #dbeafe;
+}
+
+/* Footer */
+body > footer {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    text-align: center;
+    padding: 28px 8%;
+    margin-top: 40px;
+}
+
+body > footer p {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+body > footer a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #93c5fd;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+body > footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    body > header {
+        padding: 16px 5%;
+    }
+
+    body > header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body > header .nav-links {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    body > header .logo {
+        font-size: 1.4rem;
+    }
+
+    body > footer {
+        padding: 24px 5%;
+    }
+}
